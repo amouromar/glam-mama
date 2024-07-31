@@ -1,0 +1,222 @@
+<head>
+  <link rel="stylesheet" href="./styles/home.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
+</head>
+
+<section
+  id="hero"
+  class="bg-cover bg-center py-16"
+  style="background-image: url('path-to-your-image.jpg')"
+>
+  <div class="flex flex-col lg:flex-row gap-4 justify-around text-black">
+    <div class="flex flex-col gap-4">
+      <h2 class="text-4xl poppins-semibold">Plan Your Perfect Event</h2>
+      <p
+        class="text-6xl mb-12 poppins-medium text-periwinkle underline underline-offset-8"
+      >
+        with ease and elegance
+      </p>
+      <p class="w-full lg:w-9/12 text-sm mt-2 poppins-light">
+        Book your dream event with us and rest assured that you will experience
+        the perfect blend of style and convenience.
+      </p>
+      <a
+        href="#features"
+        class="w-fit relative mt-0 px-4 py-2 bg-periwinkle-2 poppins-light text-black rounded"
+      >
+        Explore Packages
+      </a>
+    </div>
+    <div class="grid grid-cols-2 gap-2 w-full lg:w-[616px] h-[400px]">
+      <div class="relative">
+        <img
+          src="./assets/imgs/birthday.jpg"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="Image 1"
+        />
+      </div>
+      <div class="relative">
+        <img
+          src="./assets/imgs/graduation.jpg"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="Image 2"
+        />
+      </div>
+      <div class="relative">
+        <img
+          src="./assets/imgs/wedding-1.jpg"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="Image 3"
+        />
+      </div>
+      <div class="relative">
+        <img
+          src="./assets/imgs/baby-shower.jpg"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="Image 4"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="py-16">
+  <div class="flex flex-col lg:flex-row gap-12 w-full mt-8 mb-8">
+    <div class="w-full lg:w-1/2">
+      <p class="text-4xl poppins-semibold">
+        Creating Memorable Moments That Last a Lifetime
+      </p>
+    </div>
+    <div class="w-full lg:w-1/2 text-left px-8">
+      <p class="ml-auto text-sm poppins-light">
+        At our event planning company, we have lots of services to make event
+        planning easy for you. We have ready-made event packages, or we can make
+        a special plan just for you. Our team of pros will help you make your
+        event just like you want it, handling all the little details. We can
+        help with weddings, corporate events, or any other special celebration
+        to make it really great.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex flex-col lg:flex-row justify-around">
+    <div class="p-6 rounded">
+      <img
+        src="./assets/imgs/party-planning-1.jpg"
+        alt="party_planning"
+        class="inset-0 w-full h-3/6 object-cover"
+      />
+      <h4 class="text-2xl font-bold mb-2">
+        Event Packages That Suit Every Occasion
+      </h4>
+      <p class="text-sm poppins-light">
+        Choose from a variety of pre-designed event packages that cater to
+        different themes and budgets.
+      </p>
+    </div>
+    <div class="p-6 rounded">
+      <img
+        src="./assets/imgs/customized.jpg"
+        alt="custom"
+        class="inset-0 w-full h-3/6 object-cover"
+      />
+      <h4 class="text-2xl font-bold mb-2">
+        Custom Orders for Personalized Touch
+      </h4>
+      <p class="text-sm poppins-light">
+        Add custom orders to your event package to make it truly unique and
+        tailored to your needs.
+      </p>
+    </div>
+    <div class="p-6 rounded">
+      <img
+        src="./assets/imgs/quote.jpg"
+        alt="custom"
+        class="inset-0 w-full h-3/6 object-cover"
+      />
+      <h4 class="text-2xl font-bold mb-2">
+        Get a Personalized Quote for Your Event
+      </h4>
+      <p class="text-sm poppins-light">
+        Tell us your specific requirements, and we'll provide you with a custom
+        quote that fits your needs.
+      </p>
+    </div>
+  </div>
+
+  <a href="#benefits" class="block w-48 ml-6">
+    <button
+      type="button"
+      class="text-center w-full rounded-2xl h-14 relative font-sans poppins-semibold text-sm group"
+    >
+      <div
+        class="flex bg-periwinkle-2 gap-4 w-[130px] rounded-3xl h-12 w-1/4 flex items-center justify-center top-[4px] group-hover:w-[184px] z-10 duration-500"
+      >
+        <p class="translate-x-2 poppins-light">Book Now</p>
+        <svg
+          width="15px"
+          height="15px"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            points="7 2 17 12 7 22"
+          />
+        </svg>
+      </div>
+    </button>
+  </a>
+</section>
+
+<section id="benefits" class="flex flex-col lg:flex-row py-16">
+  <div class="flex flex-col gap-4 w-full lg:w-1/2 mt-8 mb-8">
+    <div class="mb-12">
+      <p class="text-4xl poppins-semibold mb-6">
+        Experience Hassle-Free Event Planning with Our Easy Booking Process
+      </p>
+      <p class="text-sm font-light">
+        At our event planning company, we offer expert services to ensure your
+        event is a success. With our hassle-free booking process, you can easily
+        choose an event package, select a date, and make your payment online. We
+        also provide customizable options to meet your specific needs.
+      </p>
+    </div>
+    <div class="flex flex-row">
+      <div class="w-full lg:w-1/2 flex flex-col gap-2">
+        <object
+          type="image/svg+xml"
+          data="./assets/imgs/box-minimalistic-svgrepo-com.svg"
+          class="w-[40px] h-[40px] mb-2"
+        ></object>
+        <p class="poppins-bold text-sm">Expertise</p>
+        <p class="poppins-light text-xs">
+          Our team of experienced event planners will handle every detail,
+          ensuring a seamless and memorable event.
+        </p>
+      </div>
+      <div class="w-full lg:w-1/2 flex flex-col gap-2">
+        <object
+          type="image/svg+xml"
+          data="./assets/imgs/box-minimalistic-svgrepo-com.svg"
+          class="w-[40px] h-[40px] mb-2"
+        ></object>
+        <p class="poppins-bold text-sm">Expertise</p>
+        <p class="poppins-light text-xs">
+          Our team of experienced event planners will handle every detail,
+          ensuring a seamless and memorable event.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full lg:w-1/2 p-8">
+    <img
+      src="./assets/imgs/prep.jpg"
+      alt=""
+      class="w-full h-full object-cover rounded-md"
+    />
+  </div>
+</section>
+
+<section id="cta" class="py-10 text-center">
+  <h3 class="text-4xl poppins-bold mb-6">
+    Discover Your Perfect Event Package
+  </h3>
+  <p class="mb-6">
+    Explore our event packages or contact us for a custom quote.
+  </p>
+  <a href=""
+    ><button class="px-6 py-2 bg-periwinkle-2 poppins-light text-black rounded">
+      Get Quote
+    </button></a
+  >
+  <a href=""
+    ><button class="px-6 py-2 bg-periwinkle-2 poppins-light text-black rounded">
+      Contact Us
+    </button></a
+  >
+</section>

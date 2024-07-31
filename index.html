@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glam Mama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo/logo-one.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-periwinkle-3 flex flex-col min-h-screen">
+    <div class="container mx-auto px-4 flex flex-col flex-grow">
+      <header class="flex flex-col sm:flex-row justify-between p-6 text-center items-center">
+        <div class="flex flex-col sm:flex-row justify-center items-center">
+          <img src="./assets/logo/logo-three.png" alt="logo" class="mb-4 sm:mb-0">
+          <h1 class="text-5xl font-bold sacramento-regular">Glam Mama</h1>
+        </div>
+        <nav class="flex flex-col sm:flex-row poppins-regular mt-4 sm:mt-0">
+          <a
+            href="home.html"
+            hx-get="home.html"
+            hx-target="#content"
+            class="mb-2 sm:mb-0 sm:mr-4"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            hx-get="about.html"
+            hx-target="#content"
+            class="mb-2 sm:mb-0 sm:mr-4"
+            >About Us</a
+          >
+          <a
+            href="services.html"
+            hx-get="services.html"
+            hx-target="#content"
+            class="mb-2 sm:mb-0 sm:mr-4"
+            >Services</a
+          >
+          <a href="contact.html" hx-get="contact.html" hx-target="#content"
+            >Contact Us</a
+          >
+        </nav>
+      </header>
+
+      <div id="content" class="mt-6 px-4 md:px-20 flex-grow">
+        <!-- Content will be loaded here -->
+      </div>
+
+      <footer class="flex flex-row justify-between items-center poppins-regular text-center py-4 lg:justify-around">
+        <img src="./assets/logo/logo-one.png" alt="" class="w-[50px] h-[50px]">
+        <p>&copy; 2024 Glam Mama. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+
+  <script src="./scripts/index.js"></script>
+</html>
