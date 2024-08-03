@@ -1,1 +1,425 @@
-<p class="poppins-regular text-center py-4">Under Construction</p>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<div class="mx-auto bg-center py-1 lg:py-12">
+  <h2 class="text-2xl lg:text-4xl px-7 poppins-semibold">Available Packages</h2>
+  <div
+    id="package-list"
+    class="flex flex-col md:flex-row gap-4 lg:flex-row"
+  >
+    <div
+      id="packageCard"
+      class="p-1 flex flex-wrap items-stretch justify-center"
+    >
+      <a href="mailto:"
+        ><div
+          id="packageCard-standard"
+          class="flex flex-col relative m-6 overflow-hidden bg-periwinkle rounded-lg max-w-sm shadow-lg group h-[360px]"
+        >
+          <p class="px-6 py-4 poppins-bold text-2xl text-white">Standard</p>
+
+          <div
+            class="relative pt-2 px-2 space-y-2 flex flex-col items-center justify-center"
+          >      
+            <ul class="flex flex-col gap-2 poppins-regular text-sm px-4 py-2 h-full">
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Venue booking</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Standard  decorations</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Standard seating arrangement</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Event coordination</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="relative mt-auto text-white px-6 pb-6 ">
+            <div class="flex justify-between gap-2">
+              <span class="block poppins-semibold text-xl">Tsh. 750,000</span>
+              <span
+                class="bg-white rounded-full text-periwinkle text-sm poppins-regular px-3 py-2 leading-none flex items-center"
+                hx-trigger="click"
+                hx-target="#confirmation-modal"
+                hx-swap="innerHTML"
+                hx-get="/confirmation-modal-content"
+                >Get Quote</span
+              >
+            </div>
+          </div>
+        </div>
+      </a>
+      
+    </div>
+    <div
+      id="packageCard"
+      class="p-1 flex flex-wrap items-stretch justify-center"
+    >
+      <a href="mailto:"
+        ><div
+          id="packageCard-premium"
+          class="flex flex-col relative m-6 overflow-hidden bg-periwinkle rounded-lg max-w-sm shadow-lg group h-[360px]"
+        >
+          <p class="px-6 py-4 poppins-bold text-2xl text-white">Premium</p>
+
+          <div
+            class="relative pt-2 px-2 space-y-2 flex flex-col items-center justify-center"
+          >      
+            <ul class="flex flex-col gap-2 poppins-regular text-sm px-4 py-2 h-full">
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Venue booking</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Luxurious decorations</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Custom seating arrangement</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Event coordination</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Event coordination</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Premium catering services</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Entertainment arrangements"</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="relative mt-auto text-white px-6 pb-6 ">
+            <div class="flex justify-between gap-2">
+              <span class="block poppins-semibold text-xl">Tsh. 750,000</span>
+              <span
+                class="bg-white rounded-full text-periwinkle text-sm poppins-regular px-3 py-2 leading-none flex items-center"
+                hx-trigger="click"
+                hx-target="#confirmation-modal"
+                hx-swap="innerHTML"
+                hx-get="/confirmation-modal-content"
+                >Get Quote</span
+              >
+            </div>
+          </div>
+        </div>
+      </a>
+      
+    </div>
+    <div
+      id="packageCard"
+      class="p-1 flex flex-wrap items-stretch justify-center"
+    >
+      <a href="mailto:"
+        ><div
+          id="packageCard-personal"
+          class="flex flex-col relative m-6 overflow-hidden bg-periwinkle rounded-lg max-w-sm shadow-lg group h-[360px]"
+        >
+          <p class="px-6 py-4 poppins-bold text-2xl text-white">Personal</p>
+
+          <div
+            class="relative pt-2 px-2 space-y-2 flex flex-col items-center justify-center"
+          >      
+            <ul class="flex flex-col gap-2 poppins-regular text-sm px-4 py-2 h-full">
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Venue booking</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Custom decorations</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Personalized seating arrangement</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Event coordination</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Gourmet catering services</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Exclusive entertainment</span>
+              </li>
+              <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg
+                  class="flex-shrink-0 w-3.5 h-3.5 text-mimi-pink dark:text-mauve"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  /></svg
+                > <span>Personalized event branding</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="relative mt-auto text-white px-6 pb-6 ">
+            <div class="flex justify-between gap-2">
+              <span class="block poppins-semibold text-xl">Tsh. 750,000</span>
+              <span
+                class="bg-white rounded-full text-periwinkle text-sm poppins-regular px-3 py-2 leading-none flex items-center"
+                hx-trigger="click"
+                hx-target="#confirmation-modal"
+                hx-swap="innerHTML"
+                hx-get="/confirmation-modal-content"
+                >Get Quote</span
+              >
+            </div>
+          </div>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</div>

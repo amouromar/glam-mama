@@ -6,14 +6,14 @@
 
 <section
   id="hero"
-  class="bg-cover bg-center py-16"
+  class="bg-cover bg-center py-2 lg:py-12"
   style="background-image: url('path-to-your-image.jpg')"
 >
   <div class="flex flex-col lg:flex-row gap-4 justify-around text-black">
     <div class="flex flex-col gap-4">
       <h2 class="text-4xl poppins-semibold">Plan Your Perfect Event</h2>
       <p
-        class="text-6xl mb-12 poppins-medium text-periwinkle underline underline-offset-8"
+        class="animate-fadeInDown text-6xl mb-12 poppins-medium text-periwinkle underline underline-offset-8"
       >
         with ease and elegance
       </p>
@@ -81,7 +81,7 @@
   </div>
 
   <div class="flex flex-col lg:flex-row justify-around">
-    <div class="p-6 rounded">
+    <div class="p-2 rounded">
       <img
         src="./assets/imgs/party-planning-1.jpg"
         alt="party_planning"
@@ -95,7 +95,7 @@
         different themes and budgets.
       </p>
     </div>
-    <div class="p-6 rounded">
+    <div class="p-2 rounded">
       <img
         src="./assets/imgs/customized.jpg"
         alt="custom"
@@ -109,7 +109,7 @@
         tailored to your needs.
       </p>
     </div>
-    <div class="p-6 rounded">
+    <div class="p-2 rounded">
       <img
         src="./assets/imgs/quote.jpg"
         alt="custom"
@@ -125,13 +125,18 @@
     </div>
   </div>
 
-  <a href="#benefits" class="block w-48 ml-6">
+  <a
+    href="services.html"
+    hx-get="services.html"
+    hx-target="#content"
+    class="block w-48"
+  >
     <button
       type="button"
       class="text-center w-full rounded-2xl h-14 relative font-sans poppins-semibold text-sm group"
     >
       <div
-        class="flex bg-periwinkle-2 gap-4 w-[130px] rounded-3xl h-12 w-1/4 flex items-center justify-center top-[4px] group-hover:w-[184px] z-10 duration-500"
+        class="flex bg-periwinkle-2 gap-4 w-[130px] rounded-3xl h-12 items-center justify-center top-[4px] group-hover:w-[184px] z-10 duration-500"
       >
         <p class="translate-x-2 poppins-light">Book Now</p>
         <svg
@@ -193,7 +198,7 @@
     </div>
   </div>
 
-  <div class="w-full lg:w-1/2 p-8">
+  <div class="w-full lg:w-1/2 p-2">
     <img
       src="./assets/imgs/prep.jpg"
       alt=""
@@ -209,12 +214,12 @@
   <p class="mb-6">
     Explore our event packages or contact us for a custom quote.
   </p>
-  <a href=""
+  <a href="services.html" hx-get="services.html" hx-target="#content"
     ><button class="px-6 py-2 bg-periwinkle-2 poppins-light text-black rounded">
       Get Quote
     </button></a
   >
-  <a href=""
+  <a href="contact.html" hx-get="contact.html" hx-target="#content"
     ><button class="px-6 py-2 bg-periwinkle-2 poppins-light text-black rounded">
       Contact Us
     </button></a
